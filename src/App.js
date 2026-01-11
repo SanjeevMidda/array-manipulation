@@ -7,9 +7,12 @@ function App() {
   const doubleAll = () => {
     console.log("working");
   };
+
   const removeEven = () => {
-    console.log("working");
+    let filteredNumbers = listOfNumbers.filter((num) => num % 2 !== 0);
+    setListOfNumnbers(filteredNumbers);
   };
+
   const addrandom = () => {
     console.log("working");
   };
@@ -20,6 +23,7 @@ function App() {
     console.log("working");
   };
 
+  return (
     <div className="App">
       <div className="mainContainer">
         <div className="listContainer">
