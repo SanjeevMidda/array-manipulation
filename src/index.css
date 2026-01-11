@@ -10,3 +10,29 @@
   align-items: center;
   height: 100dvh;
 }
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.listContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  padding: 10px;
+  margin: 5px;
+}
+
+p {
+  font-weight: 500;
+}
