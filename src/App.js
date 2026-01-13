@@ -2,23 +2,33 @@ import "./index.css";
 import { useState } from "react";
 
 function App() {
-  const [listOfNumbers, setListOfNumnbers] = useState([1, 2, 3, 4, 5]);
+  const [listOfNumbers, setListOfNumbers] = useState([1, 2, 3, 4, 5]);
 
   const doubleAll = () => {
     let itemDoubled = listOfNumbers.map((item) => {
       return item * 2;
     });
 
-    setListOfNumnbers(itemDoubled);
+    setListOfNumbers(itemDoubled);
   };
 
   const removeEven = () => {
     let filteredNumbers = listOfNumbers.filter((num) => num % 2 !== 0);
-    setListOfNumnbers(filteredNumbers);
+    setListOfNumbers(filteredNumbers);
   };
 
   const addrandom = () => {
-    console.log("working");
+    let randomListOfNumbers = [];
+
+    for (let index = 0; index < listOfNumbers.length; index++) {
+      let randomNumber = Math.floor(Math.random() * 150);
+
+      randomListOfNumbers.push(randomNumber);
+    }
+
+    setListOfNumbers(randomListOfNumbers);
+
+    console.log(randomListOfNumbers);
   };
   const removeFirst = () => {
     console.log("working");
