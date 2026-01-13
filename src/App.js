@@ -5,7 +5,11 @@ function App() {
   const [listOfNumbers, setListOfNumnbers] = useState([1, 2, 3, 4, 5]);
 
   const doubleAll = () => {
-    console.log("working");
+    let itemDoubled = listOfNumbers.map((item) => {
+      return item * 2;
+    });
+
+    setListOfNumnbers(itemDoubled);
   };
 
   const removeEven = () => {
