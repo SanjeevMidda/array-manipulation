@@ -32,7 +32,11 @@ function App() {
     setListOfNumbers((listOfNumbers) => [randomNumber, ...listOfNumbers]);
   };
 
-  const removeFirst = () => {};
+  const removeFirst = () => {
+    const [, ...newListOfNumbers] = listOfNumbers;
+    setListOfNumbers(newListOfNumbers);
+  };
+
   const reverse = () => {
     console.log("working");
   };
