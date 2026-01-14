@@ -18,21 +18,21 @@ function App() {
   };
 
   const addrandom = () => {
-    let randomListOfNumbers = [];
+    // let randomListOfNumbers = [];
 
-    for (let index = 0; index < listOfNumbers.length; index++) {
-      let randomNumber = Math.floor(Math.random() * 150);
+    // for (let index = 0; index < listOfNumbers.length; index++) {
+    //   let randomNumber = Math.floor(Math.random() * 10);
 
-      randomListOfNumbers.push(randomNumber);
-    }
+    //   randomListOfNumbers.push(randomNumber);
+    // }
 
-    setListOfNumbers(randomListOfNumbers);
+    // setListOfNumbers(randomListOfNumbers);
 
-    console.log(randomListOfNumbers);
+    let randomNumber = Math.floor(Math.random() * 10) + 1;
+    setListOfNumbers((listOfNumbers) => [randomNumber, ...listOfNumbers]);
   };
-  const removeFirst = () => {
-    console.log("working");
-  };
+
+  const removeFirst = () => {};
   const reverse = () => {
     console.log("working");
   };
