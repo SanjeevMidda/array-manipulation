@@ -38,7 +38,7 @@ function App() {
   };
 
   const reverse = () => {
-    console.log("working");
+    setListOfNumbers((listOfNumbers) => [...listOfNumbers].reverse());
   };
 
   return (
